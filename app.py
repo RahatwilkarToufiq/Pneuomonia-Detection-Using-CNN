@@ -21,10 +21,6 @@ def doctor_search(doctor_type):
 def preprocess_image(image):
     transform = transforms.Compose([
                                 transforms.Resize(256),
-                                transforms.CenterCrop(224), 
-                                transforms.RandomHorizontalFlip(), 
-                                transforms.RandomRotation(10), 
-                                transforms.RandomAffine(translate=(0.05, 0.05), degrees=0),
                                 transforms.Grayscale(num_output_channels=1),
                                 transforms.ToTensor()])
     image = Image.open(image)
