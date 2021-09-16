@@ -44,7 +44,7 @@ def predict(image):
     return pred, confidence
 
 def app():
-    st.title('Pneumonia Detection(Project by Toufiq Rahatwilkar)')
+    st.title('Pneumonia Detection')
     st.markdown('This app detects if the patient has viral, bacterial or no Pneumonia')
     st.markdown('The app is based on ResNet-50 model pre-trained on ImageNet dataset.')
     st.markdown("#")
